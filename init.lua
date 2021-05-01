@@ -13,6 +13,8 @@ description = [[Adds more 1H staves with more variety to the game.
 This addon adds more 1H staff egos that are based on some of the existing 2H staff egos, but with some of the bonuses toned down.
 Also slightly expands the number of staves available in staff stores to account for the wider variety.
 
+https://github.com/Werekracken/tome-more1hstaves
+
 ---Changelog
 v1.0.0
 Initial release 

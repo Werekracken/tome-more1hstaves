@@ -19,3 +19,6 @@ This addon for [Tales of Maj'Eyal](https://te4.org/) adds more 1H staves with mo
 
 v1.0.0
 Initial release
+
+v1.0.1
+Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves).

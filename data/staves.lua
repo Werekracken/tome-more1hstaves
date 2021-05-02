@@ -71,7 +71,7 @@ newEntity{
 	},
 	wielder = {
 		max_mana = resolvers.mbonus_material(50, 30),
-		mana_regen = resolvers.mbonus_material(20, 10, function(e, v) v=v/100 return 0, v end),
+		mana_regen = resolvers.mbonus_material(20, 10, function(e, v) v=v/100 return 0, v end), -- luacheck: ignore 212
 	},
 }
 
@@ -169,8 +169,8 @@ newEntity{
 	},
 	wielder = {
 		combat_spellpower = resolvers.mbonus_material(7, 3),
-		life_regen = resolvers.mbonus_material(10, 5, function(e, v) v=v/10 return 0, v end),
-		healing_factor = resolvers.mbonus_material(10, 10, function(e, v) v=v/100 return 0, v end),
+		life_regen = resolvers.mbonus_material(10, 5, function(e, v) v=v/10 return 0, v end), -- luacheck: ignore 212
+		healing_factor = resolvers.mbonus_material(10, 10, function(e, v) v=v/100 return 0, v end), -- luacheck: ignore 212
 		inc_stats = {
 			[Stats.STAT_CON] = resolvers.mbonus_material(4, 3),
 			},

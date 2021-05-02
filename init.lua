@@ -2,7 +2,7 @@ long_name = "More 1H Staves"
 short_name = "more1hstaves"
 for_module = "tome"
 version = {1,7,2}
-addon_version = {1,0,0}
+addon_version = {1,0,1}
 weight = 2000
 author = {"Werekracken"}
 tags = {"staff", "1h", "staves"}
@@ -18,6 +18,9 @@ https://github.com/Werekracken/tome-more1hstaves
 ---Changelog
 v1.0.0
 Initial release 
+
+v1.0.1
+Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves). 
 ]]
 overload = false
 superload = false

@@ -17,10 +17,10 @@ https://github.com/Werekracken/tome-more1hstaves
 
 ---Changelog
 v1.0.0
-Initial release 
+Initial release
 
 v1.0.1
-Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves). 
+Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves).
 ]]
 overload = false
 superload = false

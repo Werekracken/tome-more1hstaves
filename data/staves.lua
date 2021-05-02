@@ -11,6 +11,9 @@ newEntity{
 	level_range = {1, 50},
 	rarity = 3,
 	cost = 4,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		combat_spellcrit = resolvers.mbonus_material(5, 5),
 		combat_critical_power = resolvers.mbonus_material(5, 5),
@@ -26,6 +29,9 @@ newEntity{
 	level_range = {1, 50},
 	rarity = 5,
 	cost = 10,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		combat_armor = resolvers.mbonus_material(5, 2),
 		combat_armor_hardiness = resolvers.mbonus_material(5, 2),
@@ -43,6 +49,7 @@ newEntity{
 	rarity = 3,
 	cost = 5,
 	combat = {
+		accuracy_effect_scale = 0.5,
 		dam = resolvers.mbonus_material(5, 2),
 	},
 	wielder = {
@@ -60,6 +67,9 @@ newEntity{
 	level_range = {1, 50},
 	rarity = 3,
 	cost = 8,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		max_mana = resolvers.mbonus_material(50, 30),
 		mana_regen = resolvers.mbonus_material(20, 10, function(e, v) v=v/100 return 0, v end),
@@ -75,6 +85,9 @@ newEntity{
 	level_range = {1, 50},
 	rarity = 5,
 	cost = 10,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		spellsurge_on_crit = resolvers.mbonus_material(5, 2),
 	},
@@ -90,6 +103,9 @@ newEntity{
 	greater_ego = 1,
 	rarity = 30,
 	cost = 40,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		vim_on_crit = resolvers.mbonus_material(5, 1),
 		max_vim =  resolvers.mbonus_material(15, 10),
@@ -108,6 +124,9 @@ newEntity{
 	greater_ego = 1,
 	rarity = 30,
 	cost = 40,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		combat_spellpower = resolvers.mbonus_material(5, 3),
 		combat_def = resolvers.mbonus_material(10, 10),
@@ -126,7 +145,10 @@ newEntity{
 	greater_ego = 1,
 	rarity = 30,
 	cost = 45,
-	combat = {is_greater = true,},
+	combat = {
+		accuracy_effect_scale = 0.5,
+		is_greater = true,
+	},
 	wielder = {
 		combat_spellpower = resolvers.mbonus_material(5, 3),
 	},
@@ -143,6 +165,9 @@ newEntity{
 	greater_ego = 1,
 	rarity = 16,
 	cost = 35,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		combat_spellpower = resolvers.mbonus_material(7, 3),
 		life_regen = resolvers.mbonus_material(10, 5, function(e, v) v=v/10 return 0, v end),
@@ -163,6 +188,9 @@ newEntity{
 	greater_ego = 1,
 	rarity = 16,
 	cost = 35,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		combat_spellpower = resolvers.mbonus_material(7, 3),
 		combat_critical_power = resolvers.mbonus_material(15, 15),
@@ -183,6 +211,9 @@ newEntity{
 	greater_ego = 1,
 	rarity = 40,
 	cost = 90,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		inc_stats = {
 			[Stats.STAT_CUN] = resolvers.mbonus_material(5, 1),
@@ -207,6 +238,9 @@ newEntity{
 	greater_ego = 1,
 	rarity = 30,
 	cost = 60,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
 		combat_physcrit = resolvers.mbonus_material(4, 6),
 		max_mana = resolvers.mbonus_material(50, 20),

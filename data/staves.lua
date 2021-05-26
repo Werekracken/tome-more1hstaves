@@ -59,24 +59,6 @@ newEntity{
 
 newEntity{
 	power_source = {arcane=true},
-	name = "shimmering short ", prefix=true, instant_resolve=true, dual_wieldable = true,
-	slot_forbid = false,
-	twohanded = false,
-	keywords = {shimmering=true},
-	level_range = {1, 50},
-	rarity = 3,
-	cost = 8,
-	combat = {
-		accuracy_effect_scale = 0.5,
-	},
-	wielder = {
-		max_mana = resolvers.mbonus_material(50, 30),
-		mana_regen = resolvers.mbonus_material(20, 10, function(e, v) v=v/100 return 0, v end), -- luacheck: ignore 212
-	},
-}
-
-newEntity{
-	power_source = {arcane=true},
 	name = "surging short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
@@ -89,27 +71,6 @@ newEntity{
 	},
 	wielder = {
 		spellsurge_on_crit = resolvers.mbonus_material(5, 2),
-	},
-}
-
-newEntity{
-	power_source = {arcane=true},
-	name = "blighted short ", prefix=true, instant_resolve=true, dual_wieldable = true,
-	slot_forbid = false,
-	twohanded = false,
-	keywords = {blight=true},
-	level_range = {20, 50},
-	greater_ego = 1,
-	rarity = 30,
-	cost = 40,
-	combat = {
-		accuracy_effect_scale = 0.5,
-	},
-	wielder = {
-		vim_on_crit = resolvers.mbonus_material(5, 1),
-		max_vim =  resolvers.mbonus_material(15, 10),
-		combat_spellpower = resolvers.mbonus_material(5, 2),
-		combat_spellcrit = resolvers.mbonus_material(5, 5),
 	},
 }
 
@@ -224,28 +185,5 @@ newEntity{
 		max_vim =  resolvers.mbonus_material(15, 20),
 		max_negative =  resolvers.mbonus_material(15, 20),
 		negative_regen = 0.2
-	},
-}
-
-newEntity{
-	power_source = {arcane=true},
-	name = "magelord's short ", prefix=true, instant_resolve=true, dual_wieldable = true,
-	slot_forbid = false,
-	twohanded = false,
-	keywords = {magelord=true},
-	level_range = {20, 50},
-	greater_ego = 1,
-	rarity = 30,
-	cost = 60,
-	combat = {
-		accuracy_effect_scale = 0.5,
-	},
-	wielder = {
-		combat_physcrit = resolvers.mbonus_material(4, 6),
-		max_mana = resolvers.mbonus_material(50, 20),
-		combat_spellpower = resolvers.mbonus_material(5, 5),
-		melee_project = {
-			[DamageType.ARCANE] = resolvers.mbonus_material(15, 15),
-		},
 	},
 }

@@ -15,8 +15,6 @@ This addon for [Tales of Maj'Eyal](https://te4.org/) adds more 1H staves with mo
 
 ## Changelog
 
-v1.0.0
-Initial release
-
-v1.0.1
-Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves).
+- v1.0.0 Initial release
+- v1.0.1 Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves).
+- v1.0.2 Took a few egos out because when the higher level/rarity staves are created they randomly get egos and if any ego is a 1H then the staff is 1H, meaning that too many of the higher level/rarity staves were 1H. Fewer 1H egos means lower chances of a 1H ego so it should be more balanced now.

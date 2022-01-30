@@ -113,7 +113,7 @@ newEntity{
 	cost = 10,
 	combat = {
 		special_on_hit = {
-			desc=function(self, who, special)
+			desc=function(self, who, special) -- luacheck: ignore 212
 				local dam = special.arc(who)
 				return ("#LIGHT_GREEN#25%%#LAST# chance for lightning to strike from the target to a second target dealing #VIOLET#%d#LAST# damage"):tformat(dam)
 			end,
@@ -122,13 +122,13 @@ newEntity{
 				return dam
 			end,
 			on_kill=1,
-			fct=function(combat, who, target, dam, special)
+			fct=function(combat, who, target, dam, special) -- luacheck: ignore 212
 				if not rng.percent(25) then return end
 				local tgts = {}
 				local x, y = target.x, target.y
 				local grids = core.fov.circle_grids(x, y, 10, true)
 				local tg = {type="beam", range=10, friendlyfire=false, x=target.x, y=target.y}
-				for x, yy in pairs(grids) do for y, _ in pairs(grids[x]) do
+				for x, yy in pairs(grids) do for y, _ in pairs(grids[x]) do -- luacheck: ignore 212, ignore 421
 					local a = game.level.map(x, y, engine.Map.ACTOR)
 					if a and a ~= target and who:reactionToward(a) < 0 and who:canProject(tg, x, y) then
 						tgts[#tgts+1] = a
@@ -137,7 +137,7 @@ newEntity{
 
 				-- Randomly take targets
 				local target2 = (#tgts >= 0) and rng.table(tgts) or target
-				local dam = who:spellCrit(special.arc(who))
+				local dam = who:spellCrit(special.arc(who)) -- luacheck: ignore 212, ignore 412
 
 				if target2 ~= target then who:project({type="hit"}, target.x, target.y, engine.DamageType.LIGHTNING, dam) end
 				who:project(tg, target2.x, target2.y, engine.DamageType.LIGHTNING, dam)

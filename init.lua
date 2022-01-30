@@ -5,7 +5,7 @@ version = {1,7,2}
 addon_version = {1,0,2}
 weight = 2000
 author = {"Werekracken"}
-tags = {"staff", "1h", "staves"}
+tags = {"staff", "Staff", "1h", "1H", "staves", "Staves"}
 homepage = "https://te4.org/user/102798/addons"
 description = [[Adds more 1H staves with more variety to the game.
 

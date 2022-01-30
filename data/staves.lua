@@ -56,26 +56,6 @@ newEntity{
 }
 
 newEntity{
-	power_source = {arcane=true},
-	name = "greater short ", prefix=true, instant_resolve=true, dual_wieldable = true,
-	slot_forbid = false,
-	twohanded = false,
-	keywords = {greater=true},
-	level_range = {20, 50},
-	greater_ego = 1,
-	rarity = 30,
-	cost = 45,
-	combat = {
-		accuracy_effect_scale = 0.5,
-		is_greater = true,
-	},
-	wielder = {
-		combat_spellpower = resolvers.mbonus_material(5, 3),
-	},
-	resolvers.command_staff(),
-}
-
-newEntity{
 	power_source = {nature=true},
 	name = "lifebinding short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
@@ -118,33 +98,6 @@ newEntity{
 		melee_project = {
 			[DamageType.FIRE] = resolvers.mbonus_material(10, 15),
 		},
-	},
-}
-
-newEntity{
-	power_source = {arcane=true},
-	name = "bloodlich's short ", prefix=true, instant_resolve=true, dual_wieldable = true,
-	slot_forbid = false,
-	twohanded = false,
-	keywords = {bloodlich=true},
-	level_range = {30, 50},
-	greater_ego = 1,
-	rarity = 40,
-	cost = 90,
-	combat = {
-		accuracy_effect_scale = 0.5,
-	},
-	wielder = {
-		inc_stats = {
-			[Stats.STAT_CUN] = resolvers.mbonus_material(5, 1),
-			[Stats.STAT_CON] = resolvers.mbonus_material(5, 1),
-			[Stats.STAT_MAG] = resolvers.mbonus_material(5, 1),
-		},
-		combat_critical_power = resolvers.mbonus_material(10, 10),
-		vim_on_crit = resolvers.mbonus_material(5, 3),
-		max_vim =  resolvers.mbonus_material(15, 20),
-		max_negative =  resolvers.mbonus_material(15, 20),
-		negative_regen = 0.2
 	},
 }
 

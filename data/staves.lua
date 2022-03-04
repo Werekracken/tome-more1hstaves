@@ -8,6 +8,7 @@ newEntity{
 	twohanded = false,
 	keywords = {cruel=true},
 	level_range = {1, 50},
+	encumber = -2,
 	rarity = 3,
 	cost = 4,
 	combat = {
@@ -26,6 +27,7 @@ newEntity{
 	twohanded = false,
 	keywords = {potent=true},
 	level_range = {1, 50},
+	encumber = -2,
 	rarity = 3,
 	cost = 5,
 	combat = {
@@ -45,6 +47,7 @@ newEntity{
 	twohanded = false,
 	keywords = {surging=true},
 	level_range = {1, 50},
+	encumber = -2,
 	rarity = 5,
 	cost = 10,
 	combat = {
@@ -63,6 +66,7 @@ newEntity{
 	keywords = {lifebinding=true},
 	level_range = {20, 50},
 	greater_ego = 1,
+	encumber = -2,
 	rarity = 16,
 	cost = 35,
 	combat = {
@@ -86,6 +90,7 @@ newEntity{
 	keywords = {infernal=true},
 	level_range = {20, 50},
 	greater_ego = 1,
+	encumber = -2,
 	rarity = 16,
 	cost = 35,
 	combat = {
@@ -109,6 +114,7 @@ newEntity{
 	keywords = {arcing=true},
 	level_range = {1, 50},
 	unique_ego = 1,
+	encumber = -2,
 	rarity = 5,
 	cost = 10,
 	combat = {
@@ -159,6 +165,7 @@ newEntity{
 	rarity = 15,
 	greater_ego = 1,
 	unique_ego = 1,
+	encumber = -2,
 	cost = 40,
 	wielder = {
 		combat_physcrit = resolvers.mbonus_material(5, 3),
@@ -179,6 +186,7 @@ newEntity{
 	keywords = {shearing=true},
 	level_range = {20, 50},
 	greater_ego = 1,
+	encumber = -2,
 	rarity = 20,
 	cost = 40,
 	combat = {

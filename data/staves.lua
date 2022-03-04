@@ -112,6 +112,7 @@ newEntity{
 	rarity = 5,
 	cost = 10,
 	combat = {
+		accuracy_effect_scale = 0.5,
 		special_on_hit = {
 			desc=function(self, who, special) -- luacheck: ignore 212
 				local dam = special.arc(who)
@@ -160,9 +161,10 @@ newEntity{
 	unique_ego = 1,
 	cost = 40,
 	wielder = {
-		combat_physcrit = resolvers.mbonus_material(10, 5),
+		combat_physcrit = resolvers.mbonus_material(5, 3),
 	},
 	combat = {
+		accuracy_effect_scale = 0.5,
 		special_on_crit = {desc=_t"Cripple the target reducing mind, spell, and combat action speeds by 30%", fct=function(combat, who, target)
 			target:setEffect(target.EFF_CRIPPLE, 4, {src=who, apply_power=who:combatAttack(combat)})
 		end},
@@ -179,11 +181,14 @@ newEntity{
 	greater_ego = 1,
 	rarity = 20,
 	cost = 40,
+	combat = {
+		accuracy_effect_scale = 0.5,
+	},
 	wielder = {
-		combat_atk = resolvers.mbonus_material(20, 5),
-		combat_apr = resolvers.mbonus_material(10, 5),
+		combat_atk = resolvers.mbonus_material(10, 3),
+		combat_apr = resolvers.mbonus_material(5, 3),
 		resists_pen = {
-			['all'] = resolvers.mbonus_material(10, 5),
+			['all'] = resolvers.mbonus_material(5, 3),
 		},
 	},
 }

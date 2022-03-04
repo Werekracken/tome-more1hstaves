@@ -2,7 +2,7 @@ long_name = "More 1H Staves"
 short_name = "more1hstaves"
 for_module = "tome"
 version = {1,7,2}
-addon_version = {1,0,3}
+addon_version = {1,0,5}
 weight = 2000
 author = {"Werekracken"}
 tags = {"staff", "Staff", "1h", "1H", "staves", "Staves"}
@@ -20,6 +20,8 @@ https://github.com/Werekracken/tome-more1hstaves
 - v1.0.1 Changed the new 1H staves proc bonus from 2.5 (which is normal for 2H staves) to 1.2 (which is normal for 1H staves).
 - v1.0.2 Took a few egos out because when the higher level/rarity staves are created they randomly get egos and if any ego is a 1H then the staff is 1H, meaning that too many of the higher level/rarity staves were 1H. Fewer 1H egos means lower chances of a 1H ego so it should be more balanced now.
 - v1.0.3 Took out some blah 1H staff egos and added a few that are a bit more related to bonking, like crippling. Total 1H ego count went down by 1.
+- v1.0.4 Toned down the bonuses on the new egos a little to be consistent and logical.
+- v1.0.5 Fixed accuracy scaling on the new egos from 1.0.3.
 ]]
 overload = false
 superload = false

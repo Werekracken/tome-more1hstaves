@@ -6,7 +6,7 @@ newEntity{
 	name = "cruel short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {cruel=true},
+	keywords = {cruel=true, short=true},
 	level_range = {1, 50},
 	encumber = -2,
 	rarity = 3,
@@ -18,6 +18,11 @@ newEntity{
 		combat_spellcrit = resolvers.mbonus_material(5, 5),
 		combat_critical_power = resolvers.mbonus_material(5, 5),
 	},
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }
 
 newEntity{
@@ -25,7 +30,7 @@ newEntity{
 	name = "potent short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {potent=true},
+	keywords = {potent=true, short=true},
 	level_range = {1, 50},
 	encumber = -2,
 	rarity = 3,
@@ -38,6 +43,11 @@ newEntity{
 		combat_spellpower = resolvers.mbonus_material(3, 2),
 	},
 	resolvers.command_staff(),
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }
 
 newEntity{
@@ -45,7 +55,7 @@ newEntity{
 	name = "surging short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {surging=true},
+	keywords = {surging=true, short=true},
 	level_range = {1, 50},
 	encumber = -2,
 	rarity = 5,
@@ -56,6 +66,11 @@ newEntity{
 	wielder = {
 		spellsurge_on_crit = resolvers.mbonus_material(5, 2),
 	},
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }
 
 newEntity{
@@ -63,7 +78,7 @@ newEntity{
 	name = "lifebinding short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {lifebinding=true},
+	keywords = {lifebinding=true, short=true},
 	level_range = {20, 50},
 	greater_ego = 1,
 	encumber = -2,
@@ -80,6 +95,11 @@ newEntity{
 			[Stats.STAT_CON] = resolvers.mbonus_material(4, 3),
 			},
 	},
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }
 
 newEntity{
@@ -87,7 +107,7 @@ newEntity{
 	name = "infernal short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {infernal=true},
+	keywords = {infernal=true, short=true},
 	level_range = {20, 50},
 	greater_ego = 1,
 	encumber = -2,
@@ -104,6 +124,11 @@ newEntity{
 			[DamageType.FIRE] = resolvers.mbonus_material(10, 15),
 		},
 	},
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }
 
 newEntity{
@@ -111,7 +136,7 @@ newEntity{
 	name = "arcing short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {arcing=true},
+	keywords = {arcing=true, short=true},
 	level_range = {1, 50},
 	unique_ego = 1,
 	encumber = -2,
@@ -152,6 +177,11 @@ newEntity{
 				game:playSoundNear(who, "talents/lightning")
 			end
 		},
+		resolvers.genericlast(function(e)
+			if e.moddable_tile:find("_hand_08_0[1-5]") then
+				e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+			end
+		end),
 	},
 }
 
@@ -160,7 +190,7 @@ newEntity{
 	name = "crippling short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {crippling=true},
+	keywords = {crippling=true, short=true},
 	level_range = {1, 50},
 	rarity = 15,
 	greater_ego = 1,
@@ -176,6 +206,11 @@ newEntity{
 			target:setEffect(target.EFF_CRIPPLE, 4, {src=who, apply_power=who:combatAttack(combat)})
 		end},
 	},
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }
 
 newEntity{
@@ -183,7 +218,7 @@ newEntity{
 	name = "crushing short ", prefix=true, instant_resolve=true, dual_wieldable = true,
 	slot_forbid = false,
 	twohanded = false,
-	keywords = {shearing=true},
+	keywords = {shearing=true, short=true},
 	level_range = {20, 50},
 	greater_ego = 1,
 	encumber = -2,
@@ -199,4 +234,9 @@ newEntity{
 			['all'] = resolvers.mbonus_material(5, 3),
 		},
 	},
+	resolvers.genericlast(function(e)
+		if e.moddable_tile:find("_hand_08_0[1-5]") then
+			e.moddable_tile = e.moddable_tile:gsub("_hand_08_0([1-5])", "_hand_08_0%1_1h")
+		end
+	end),
 }

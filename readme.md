@@ -22,3 +22,4 @@ This addon for [Tales of Maj'Eyal](https://te4.org/) adds more 1H staves with mo
 - v1.0.4 Toned down the bonuses on the new egos a little to be consistent and logical.
 - v1.0.5 Fixed accuracy scaling on the new egos from 1.0.3.
 - v1.0.6 Reduced the weight of the 1H staves from 5 to 3, but only in these egos in the addon. This does not apply to the 1H staff egos already in the game: prefix = "short ", and prefix = "magewarrior's short ".
+- v1.0.7 Added the the "short" keyword to all 1h staves in this addon (the magewarrior's short staff in the basegame still doesn't have the keyword).Made short staves added by this addon look like short staves on the character when equipped, just like the "magewarrior's short" and "short" staves in the basegame look.
